@@ -1,0 +1,479 @@
+/* ======================================================
+   Makrahat Darul Quran Islamia Madrasa
+   File: style.css
+   Version: 1.0
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* এরপর বাকি CSS কোড... */
+/* ==========================================
+   Makrahat Darul Quran Islamia Madrasa
+   File : style.css
+   Version : 1.0
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Hind Siliguri',sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#006633;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    margin-right:15px;
+    background:#fff;
+    padding:5px;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:15px;
+    color:#d8ffd8;
+}
+
+.contact{
+    text-align:right;
+    font-size:15px;
+}
+
+.contact p{
+    margin:4px 0;
+}
+
+/* ================= MENU ================= */
+
+nav{
+    background:#004d26;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 22px;
+    transition:.3s;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    background:#00a651;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:url("images/banner.jpg") center center/cover;
+    height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    color:#fff;
+    max-width:850px;
+    padding:20px;
+}
+
+.hero-content h2{
+    color:#FFD700;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content h3{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    transform:translateY(-3px);
+  }
+/* ================= SECTION ================= */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#006633;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:18px;
+    max-width:850px;
+    margin:auto;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#ffffff;
+}
+
+.about p{
+    font-size:18px;
+    text-align:center;
+    line-height:2;
+    color:#444;
+}
+
+/* ================= CARD GRID ================= */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#006633;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#555;
+    font-size:16px;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    background:#eef9f2;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#ffffff;
+    border-left:6px solid #006633;
+    padding:25px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.feature:hover{
+    background:#006633;
+    color:#ffffff;
+}
+
+/* ================= COUNTER ================= */
+
+.counter{
+    background:#006633;
+    color:#ffffff;
+}
+
+.counter .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.counter-box{
+    padding:30px;
+}
+
+.counter-box h2{
+    font-size:50px;
+    color:#FFD700;
+}
+
+.counter-box p{
+    font-size:18px;
+    margin-top:10px;
+}
+/* ================= GALLERY ================= */
+
+.gallery{
+    background:#ffffff;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* ================= NOTICE ================= */
+
+.notice{
+    background:#f8fff8;
+}
+
+.notice-box{
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    height:260px;
+    overflow:hidden;
+}
+
+.notice-box p{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    font-size:17px;
+}
+
+/* ================= MAP ================= */
+
+.location iframe{
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#ffffff;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.contact-item{
+    background:#f8f8f8;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contact-item h3{
+    color:#006633;
+    margin-bottom:15px;
+}
+
+.contact-item p{
+    color:#444;
+    line-height:1.8;
+}
+
+.contact-item a{
+    color:#006633;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ================= FACEBOOK BUTTON ================= */
+
+.facebook-btn{
+    display:inline-block;
+    background:#1877F2;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.facebook-btn:hover{
+    background:#0d5fd3;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#003d1f;
+    color:#ffffff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer hr{
+    margin:25px auto;
+    width:220px;
+    border:1px solid rgba(255,255,255,.3);
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.logo{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+    margin-top:15px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+.hero{
+    height:500px;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.hero-content h3{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+  }
+
