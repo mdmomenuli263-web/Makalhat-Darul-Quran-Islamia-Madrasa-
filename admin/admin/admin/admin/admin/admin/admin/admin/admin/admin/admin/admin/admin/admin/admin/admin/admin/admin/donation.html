@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donation Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>💰 Donation Management</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Donation Information</h3>
+
+<form id="donationForm">
+
+<div class="input-group">
+
+<label>Bank Name</label>
+
+<input
+type="text"
+id="bankName"
+placeholder="Enter Bank Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Account Name</label>
+
+<input
+type="text"
+id="accountName"
+placeholder="Account Holder Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Account Number</label>
+
+<input
+type="text"
+id="accountNumber"
+placeholder="Account Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Mobile Banking</label>
+
+<input
+type="text"
+id="mobileBanking"
+placeholder="Bkash / Nagad / Rocket">
+
+</div>
+
+<div class="input-group">
+
+<label>QR Code Image</label>
+
+<input
+type="file"
+id="qrCode"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Donation Message</label>
+
+<textarea
+id="donationMessage"
+rows="5"
+placeholder="Write Donation Message..."></textarea>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Save Donation Information
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Current Donation Information</h3>
+
+<div id="donationList">
+
+<p>No Donation Information Found.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+  </html>
