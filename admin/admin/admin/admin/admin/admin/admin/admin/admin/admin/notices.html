@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notice Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>📢 Notice Management</h2>
+
+<a href="dashboard.html" class="login-btn">
+Dashboard
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Add New Notice</h3>
+
+<form id="noticeForm">
+
+<div class="input-group">
+
+<label>Notice Title</label>
+
+<input
+type="text"
+id="noticeTitle"
+placeholder="Enter Notice Title"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Notice Description</label>
+
+<textarea
+id="noticeDescription"
+rows="6"
+placeholder="Write Notice..."
+required></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>Publish Date</label>
+
+<input
+type="date"
+id="noticeDate"
+required>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Publish Notice
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Published Notices</h3>
+
+<div id="noticeList">
+
+<p>No Notice Available.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
