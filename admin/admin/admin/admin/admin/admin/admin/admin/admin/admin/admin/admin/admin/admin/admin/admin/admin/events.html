@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Events Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>🎉 Events Management</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Add New Event</h3>
+
+<form id="eventForm">
+
+<div class="input-group">
+
+<label>Event Title</label>
+
+<input
+type="text"
+id="eventTitle"
+placeholder="Enter Event Title"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Event Date</label>
+
+<input
+type="date"
+id="eventDate"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Location</label>
+
+<input
+type="text"
+id="eventLocation"
+placeholder="Event Location"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Event Image</label>
+
+<input
+type="file"
+id="eventImage"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Description</label>
+
+<textarea
+id="eventDescription"
+rows="6"
+placeholder="Write Event Details..."
+required></textarea>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Publish Event
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Published Events</h3>
+
+<div id="eventsList">
+
+<p>No Events Available.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
