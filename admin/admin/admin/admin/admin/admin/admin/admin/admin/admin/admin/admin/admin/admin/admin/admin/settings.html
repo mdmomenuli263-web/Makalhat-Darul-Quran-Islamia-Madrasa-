@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Website Settings</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>⚙️ Website Settings</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Website Information</h3>
+
+<form id="settingsForm">
+
+<div class="input-group">
+
+<label>Website Name</label>
+
+<input
+type="text"
+id="siteName"
+placeholder="Makalhat Darul Quran Islamia Madrasa"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Website Logo</label>
+
+<input
+type="file"
+id="siteLogo"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Website Banner</label>
+
+<input
+type="file"
+id="siteBanner"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Address</label>
+
+<textarea
+id="address"
+rows="3"
+placeholder="Enter Address"
+required></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="text"
+id="phone"
+placeholder="+8801XXXXXXXXX">
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="info@example.com">
+
+</div>
+
+<div class="input-group">
+
+<label>Facebook URL</label>
+
+<input
+type="url"
+id="facebook"
+placeholder="https://facebook.com/...">
+
+</div>
+
+<div class="input-group">
+
+<label>YouTube URL</label>
+
+<input
+type="url"
+id="youtube"
+placeholder="https://youtube.com/...">
+
+</div>
+
+<div class="input-group">
+
+<label>WhatsApp Number</label>
+
+<input
+type="text"
+id="whatsapp"
+placeholder="+8801XXXXXXXXX">
+
+</div>
+
+<div class="input-group">
+
+<label>Footer Text</label>
+
+<textarea
+id="footer"
+rows="3"
+placeholder="© 2026 All Rights Reserved"></textarea>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Save Settings
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Current Website Settings</h3>
+
+<div id="settingsList">
+
+<p>No Settings Available.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
