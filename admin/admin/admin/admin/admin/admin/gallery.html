@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>📷 Gallery Management</h2>
+
+<a href="dashboard.html" class="login-btn">Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Upload New Image</h3>
+
+<form id="galleryForm">
+
+<div class="input-group">
+
+<label>Image Title</label>
+
+<input
+type="text"
+id="imageTitle"
+placeholder="Enter Image Title"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Select Image</label>
+
+<input
+type="file"
+id="imageFile"
+accept="image/*"
+required>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Upload Image
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Gallery Images</h3>
+
+<div id="galleryList">
+
+<p>No Images Found.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="database.js"></script>
+
+</body>
+
+</html>
