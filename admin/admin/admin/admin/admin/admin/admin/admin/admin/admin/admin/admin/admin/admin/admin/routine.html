@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Class Routine Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>📅 Class Routine</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Add Routine</h3>
+
+<form id="routineForm">
+
+<div class="input-group">
+
+<label>Class</label>
+
+<input
+type="text"
+id="className"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Day</label>
+
+<input
+type="text"
+id="dayName"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Subject</label>
+
+<input
+type="text"
+id="subjectName"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Teacher</label>
+
+<input
+type="text"
+id="teacherName"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Time</label>
+
+<input
+type="time"
+id="routineTime"
+required>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Save Routine
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Routine List</h3>
+
+<div id="routineList">
+
+<p>No Routine Available.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+  </html>
