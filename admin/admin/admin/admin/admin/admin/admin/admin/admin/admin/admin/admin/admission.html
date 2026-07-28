@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>📝 Admission Management</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>New Admission</h3>
+
+<form id="admissionForm">
+
+<div class="input-group">
+
+<label>Student Name</label>
+
+<input
+type="text"
+id="studentName"
+placeholder="Enter Student Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Father Name</label>
+
+<input
+type="text"
+id="fatherName"
+placeholder="Enter Father's Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Mother Name</label>
+
+<input
+type="text"
+id="motherName"
+placeholder="Enter Mother's Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Date of Birth</label>
+
+<input
+type="date"
+id="dob"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Gender</label>
+
+<select id="gender" required>
+
+<option value="">Select Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Class</label>
+
+<input
+type="text"
+id="class"
+placeholder="Enter Class"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Guardian Mobile</label>
+
+<input
+type="tel"
+id="mobile"
+placeholder="01XXXXXXXXX"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Address</label>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Enter Address"
+required></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>Student Photo</label>
+
+<input
+type="file"
+id="studentPhoto"
+accept="image/*">
+
+</div>
+
+<img
+id="previewImage"
+style="width:120px;display:none;border-radius:10px;margin:15px auto;">
+
+<button
+type="submit"
+class="login-btn">
+
+Submit Admission
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Admission Applications</h3>
+
+<div id="admissionList">
+
+<p>No Admission Application Found.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="storage.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script src="admin.js"></script>
+
+</body>
+
+  </html>
