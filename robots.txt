@@ -1,0 +1,11 @@
+# ==========================================
+# Makrahat Darul Quran Islamia Madrasa
+# robots.txt
+# ==========================================
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mdmomenuli263-web.github.io/Makalhat-Darul-Quran-Islamia-Madrasa-/sitemap.xml
+
+# End of File
