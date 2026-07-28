@@ -1,0 +1,4 @@
+Contact: mailto:your-email@example.com
+Expires: 2027-12-31T23:59:59Z
+Preferred-Languages: bn, en
+Canonical: https://mdmomenuli263-web.github.io/Makalhat-Darul-Quran-Islamia-Madrasa-/security.txt
