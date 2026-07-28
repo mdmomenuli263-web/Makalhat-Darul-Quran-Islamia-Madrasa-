@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Students Management</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>🎓 Students Management</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>Add New Student</h3>
+
+<form id="studentForm">
+
+<div class="input-group">
+
+<label>Student Name</label>
+
+<input
+type="text"
+id="studentName"
+placeholder="Enter Student Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Father Name</label>
+
+<input
+type="text"
+id="fatherName"
+placeholder="Enter Father Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Mother Name</label>
+
+<input
+type="text"
+id="motherName"
+placeholder="Enter Mother Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Class</label>
+
+<input
+type="text"
+id="studentClass"
+placeholder="Class"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Roll Number</label>
+
+<input
+type="number"
+id="studentRoll"
+placeholder="Roll Number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Date of Birth</label>
+
+<input
+type="date"
+id="studentDOB"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Student Photo</label>
+
+<input
+type="file"
+id="studentPhoto"
+accept="image/*">
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Save Student
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Students List</h3>
+
+<div id="studentList">
+
+<p>No Students Found.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+  </html>
