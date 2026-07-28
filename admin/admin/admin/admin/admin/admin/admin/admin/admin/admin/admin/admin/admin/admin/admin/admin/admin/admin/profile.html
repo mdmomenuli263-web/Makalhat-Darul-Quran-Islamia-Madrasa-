@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Profile</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<h2>👤 Admin Profile</h2>
+
+<a href="dashboard.html" class="login-btn">
+
+Dashboard
+
+</a>
+
+</header>
+
+<div class="container">
+
+<div class="login-box">
+
+<h3>My Profile</h3>
+
+<form id="profileForm">
+
+<div class="input-group">
+
+<label>Profile Photo</label>
+
+<input
+type="file"
+id="profilePhoto"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="profileName"
+placeholder="Full Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="profileEmail"
+placeholder="Email Address"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="text"
+id="profilePhone"
+placeholder="+8801XXXXXXXXX">
+
+</div>
+
+<div class="input-group">
+
+<label>New Password</label>
+
+<input
+type="password"
+id="newPassword"
+placeholder="Leave blank if no change">
+
+</div>
+
+<div class="input-group">
+
+<label>Confirm Password</label>
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password">
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+Update Profile
+
+</button>
+
+</form>
+
+</div>
+
+<br>
+
+<div class="login-box">
+
+<h3>Profile Preview</h3>
+
+<div id="profilePreview">
+
+<img
+id="previewImage"
+src="../images/default-user.png"
+style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
+
+<h3 id="previewName">
+
+Administrator
+
+</h3>
+
+<p id="previewEmail">
+
+admin@example.com
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="database.js"></script>
+
+<script type="module" src="upload.js"></script>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+  </html>
